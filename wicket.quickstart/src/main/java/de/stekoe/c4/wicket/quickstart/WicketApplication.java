@@ -26,5 +26,8 @@ public class WicketApplication extends WebApplication
 	public void init()
 	{
 		super.init();
+		
+		mountPage("/home", HomePage.class);
+		mountPage("/contact", ContactPage.class);
 	}
 }
